@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gagan Sharma's Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to your custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800 bg-gray-50 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm p-4 dark:bg-gray-800/80">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600 hover:text-blue-800 transition">Gagan Sharma</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition dark:text-gray-300 dark:hover:text-blue-400">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-blue-600 transition dark:text-gray-300 dark:hover:text-blue-400">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-blue-600 transition dark:text-gray-300 dark:hover:text-blue-400">Projects</a>
+                <a href="#education" class="text-gray-600 hover:text-blue-600 transition dark:text-gray-300 dark:hover:text-blue-400">Education</a>
+                <a href="#certifications" class="text-gray-600 hover:text-blue-600 transition dark:text-gray-300 dark:hover:text-blue-400">Certifications</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition dark:text-gray-300 dark:hover:text-blue-400">Contact</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <!-- Dark Mode Toggle Button -->
+                <button id="dark-mode-toggle" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                    <i class="fas fa-moon text-xl dark:hidden"></i>
+                    <i class="fas fa-sun text-xl hidden dark:inline"></i>
+                </button>
+                <!-- Mobile Menu Button -->
+                <button id="menu-button" class="md:hidden text-gray-600 hover:text-blue-600 transition dark:text-gray-300 dark:hover:text-blue-400">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 text-center">
+            <a href="#about" class="block py-2 text-gray-600 hover:bg-gray-100 rounded-md dark:text-gray-300 dark:hover:bg-gray-700">About</a>
+            <a href="#skills" class="block py-2 text-gray-600 hover:bg-gray-100 rounded-md dark:text-gray-300 dark:hover:bg-gray-700">Skills</a>
+            <a href="#projects" class="block py-2 text-gray-600 hover:bg-gray-100 rounded-md dark:text-gray-300 dark:hover:bg-gray-700">Projects</a>
+            <a href="#education" class="block py-2 text-gray-600 hover:bg-gray-100 rounded-md dark:text-gray-300 dark:hover:bg-gray-700">Education</a>
+            <a href="#certifications" class="block py-2 text-gray-600 hover:bg-gray-100 rounded-md dark:text-gray-300 dark:hover:bg-gray-700">Certifications</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:bg-gray-100 rounded-md dark:text-gray-300 dark:hover:bg-gray-700">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero/About Section -->
+    <section id="about" class="container mx-auto py-24 px-4 text-center fade-in">
+        <div class="max-w-2xl mx-auto">
+            <img src="IMG-20250227-WA0011.jpg" alt="Gagan Sharma's Profile Picture" class="rounded-full w-36 h-36 mx-auto mb-6 shadow-lg">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2">Hello, I'm Gagan Sharma</h1>
+            <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 font-medium italic mb-4">An aspiring Frontend Developer, learning DSA and building projects.</p>
+            <p id="bio-text" class="text-md text-gray-700 dark:text-gray-400 mb-6">Click the button below to generate a professional bio based on your details.</p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <button id="generate-bio-btn" class="bg-blue-600 text-white font-medium py-3 px-6 rounded-full shadow-lg hover:bg-blue-700 transition">✨ Generate a Bio</button>
+                <a href="Gagan_Sharma_Internship_Resume_Premium.docx" download class="bg-white text-blue-600 font-medium py-3 px-6 rounded-full shadow-lg border border-blue-600 hover:bg-blue-100 transition dark:bg-gray-700 dark:text-blue-400 dark:border-blue-400 dark:hover:bg-gray-600">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-100 dark:bg-gray-800 py-20 px-4">
+        <div class="container mx-auto text-center fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">My Skills</h2>
+            <div class="max-w-4xl mx-auto">
+                <p id="skill-summary" class="text-lg text-gray-600 dark:text-gray-400 mb-6">Click the button below to generate a summary of your skills.</p>
+                <button id="generate-skill-summary-btn" class="bg-blue-600 text-white font-medium py-2 px-4 rounded-full shadow-lg hover:bg-blue-700 transition mb-12">✨ Generate Skill Summary</button>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+                <!-- Languages -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                    <i class="fab fa-js-square text-5xl text-yellow-500 mb-4"></i>
+                    <h3 class="text-xl font-bold">JavaScript (ES6+)</h3>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                    <i class="fab fa-html5 text-5xl text-orange-500 mb-4"></i>
+                    <h3 class="text-xl font-bold">HTML5</h3>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                    <i class="fab fa-css3-alt text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold">CSS3</h3>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                    <h3 class="text-xl font-bold mt-4">C++</h3>
+                </div>
+
+                <!-- Frameworks & Libraries -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                    <i class="fab fa-react text-5xl text-cyan-500 mb-4"></i>
+                    <h3 class="text-xl font-bold">ReactJS</h3>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                    <i class="fab fa-react text-5xl text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-bold">Redux</h3>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                    <i class="fa-solid fa-wind text-5xl text-sky-400 mb-4"></i>
+                    <h3 class="text-xl font-bold">Tailwind CSS</h3>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                    <i class="fab fa-bootstrap text-5xl text-purple-500 mb-4"></i>
+                    <h3 class="text-xl font-bold">Bootstrap</h3>
+                </div>
+
+                <!-- Tools -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                    <i class="fab fa-git-alt text-5xl text-orange-600 mb-4"></i>
+                    <h3 class="text-xl font-bold">Git/GitHub</h3>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                    <i class="fas fa-code text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold">VS Code</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4">
+        <div class="container mx-auto text-center fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">My Projects</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mb-12">A selection of my recent work.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Project Card 1: Movie Finder App -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
+                    <img src="https://placehold.co/600x400/e0e0e0/333333?text=Movie+Finder+App" alt="Movie Finder App" class="w-full h-56 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-2xl font-bold mb-2 project-title">🎬 Movie Finder App</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 project-description">Implemented search functionality with debouncing, dynamic routing using React Router, and a responsive design using Tailwind CSS. The app also features error handling and loader integration.</p>
+                        <a href="https://github.com/gagancodes7" target="_blank" class="text-blue-600 font-medium hover:underline transition dark:text-blue-400">View on GitHub <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                <!-- Project Card 2: Portfolio Website -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
+                    <img src="https://placehold.co/600x400/e0e0e0/333333?text=Portfolio+Website" alt="Portfolio Website" class="w-full h-56 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-2xl font-bold mb-2 project-title">🌐 Portfolio Website</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 project-description">Personal website showcasing projects and skills with an interactive UI. It was deployed on Netlify with custom scroll animations and a mobile-first design approach.</p>
+                        <a href="https://github.com/gagancodes7" target="_blank" class="text-blue-600 font-medium hover:underline transition dark:text-blue-400">View on GitHub <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                <!-- Project Card 3: Firebase Auth App -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
+                    <img src="https://placehold.co/600x400/e0e0e0/333333?text=Firebase+Auth+App" alt="Firebase Auth App" class="w-full h-56 object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-2xl font-bold mb-2 project-title">📦 Firebase Auth App</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 project-description">Built a simple login/signup authentication system using Firebase Auth and Firestore. The app includes integrated form validation, error handling, and routing, and was hosted on Firebase.</p>
+                        <a href="https://github.com/gagancodes7" target="_blank" class="text-blue-600 font-medium hover:underline transition dark:text-blue-400">View on GitHub <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="bg-gray-100 dark:bg-gray-800 py-20 px-4">
+        <div class="container mx-auto text-center fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Education</h2>
+            <div class="max-w-2xl mx-auto text-left bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold mb-2">B.Tech in Electronics and Communication Engineering</h3>
+                <p class="text-lg text-gray-600 dark:text-gray-400">Ajay Kumar Garg Engineering College</p>
+                <p class="text-md text-gray-500 dark:text-gray-500 mt-2">CGPA: 7.7</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 px-4">
+        <div class="container mx-auto text-center fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Certifications</h2>
+            <div class="max-w-2xl mx-auto text-left bg-gray-100 dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+                <ul class="list-disc list-inside space-y-2 text-lg text-gray-700 dark:text-gray-300">
+                    <li>Complete React Developer Course – Udemy</li>
+                    <li>Frontend Development Bootcamp – CodeHelp</li>
+                    <li>JavaScript + ES6 – Apna College</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-800 dark:bg-gray-900 py-20 px-4">
+        <div class="container mx-auto text-center fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Get In Touch</h2>
+            <p class="text-lg text-gray-400 mb-12">I'd love to hear from you. Send me a message!</p>
+            <form action="#" class="max-w-xl mx-auto bg-gray-700 p-8 rounded-xl shadow-lg dark:bg-gray-800">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <input type="text" placeholder="Your Name" class="w-full p-3 rounded-md bg-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-600 dark:placeholder-gray-400">
+                    <input type="email" placeholder="Your Email" class="w-full p-3 rounded-md bg-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-600 dark:placeholder-gray-400">
+                </div>
+                <textarea rows="5" placeholder="Your Message" class="w-full p-3 rounded-md bg-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-6 dark:bg-gray-600 dark:placeholder-gray-400"></textarea>
+                <button type="submit" class="bg-blue-600 text-white font-medium py-3 px-8 rounded-full hover:bg-blue-700 transition">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-gray-900 text-center py-8 text-gray-400">
+        <div class="container mx-auto">
+            <p>&copy; 2024 Gagan Sharma. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="https://github.com/gagancodes7" target="_blank" class="hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
+                <a href="https://www.linkedin.com/in/gagan-sharma-b50989241/" target="_blank" class="hover:text-white transition"><i class="fab fa-linkedin text-xl"></i></a>
+                <a href="https://twitter.com/introvertspeax" target="_blank" class="hover:text-white transition"><i class="fab fa-twitter text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg hidden hover:bg-blue-700 transition">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Link to your custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
